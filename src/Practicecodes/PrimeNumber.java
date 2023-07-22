@@ -1,30 +1,24 @@
 package Practicecodes;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class PrimeNumber {
 
 	public static void main(String[] args) {
-      Scanner sc=new Scanner(System.in);
-      int number=sc.nextInt();
-      int count=0;
-      
-      if(number>1) {
-    	  for(int i=1;i<=number;i++) {
-    		  if(number%i==0) {
-    			  count++;
-    		  }
-    		  
-    	  }
-    	  if(count==2) {
-			  System.out.println("number is prime number");
-		  }else {
-			  System.out.println("number not a prime number");
-		  }
-    	  
-      }else {
-    	  System.out.println("not a prime number");
-      }
+	for(int j=1;j<=20;j++) {
+	int count = 0;
+	for(int i=1;i<=j;i++) {
+		if(j%i==0) {
+			count++;
+		}
 	}
-
+	if(count==2) {
+		System.out.println(j);
+	}
+	
+	}
+	}
 }
